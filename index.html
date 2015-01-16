@@ -1,21 +1,22 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="fr" xmlns="http://www.w3.org/1999/html">
 
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>API-first et Linked Data avec Symfony</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="description" content="La nouvelle manière de construire les applications web.">
+		<meta name="author" content="Kévin Dunglas">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
+		<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/theme/league.css" id="theme">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -38,340 +39,523 @@
 
 		<div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
+					<h1>API-first et Linked Data avec Symfony</h1>
+					<h2>Le web sémantique a porté de main</h2>
 				</section>
 
 				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
-				</section>
+					<h1>Kévin Dunglas</h1>
 
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
+					<div style="float: left; width: 60%">
+						<ul>
+							<li>Co-fondateur de <a href="http://les-tilleuls.coop">Les-Tilleuls.coop</a></li>
+							<li>Architecte <a href="http://symfony.com">Symfony</a></li>
+							<li>Consultant e-commerce</li>
+							<li>
+								<a href="http://twitter.com/dunglas"><i class="fa fa-twitter"></i></a> <a href="http://github.com/dunglas"><i class="fa fa-github"></i></a> @dunglas
+							</li>
+							<li>
+								<a href="http://dunglas.fr">dunglas.fr</a>
+							</li>
+						</ul>
+					</div>
+					<div style="float: left; width: 40%">
+						<img alt="Kévin Dunglas" src="https://pbs.twimg.com/profile_images/378800000195280241/d7231c460212ead430782025e1fd1c92.png">
+					</div>
 				</section>
 
 				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-					</p>
-				</section>
+					<h1>Les-Tilleuls.coop</h1>
 
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
+					<div style="float: left; width: 60%">
+						<ul>
+							<li>Expertise Symfony, Magento et e-commerce</li>
+							<li>Coopérative (Scop)</li>
+							<li>Société possédée et dirigée par ses salariés</li>
+							<li>
+								<a href="http://twitter.com/coopTilleuls"><i class="fa fa-twitter"></i></a> <a href="http://github.com/coopTilleuls"><i class="fa fa-github"></i></a> @coopTilleuls
+							</li>
+							<li>
+								<a href="http://les-tilleuls.coop">Les-Tilleuls.coop</a>
+							</li>
+							<li><b>On embauche !</b></li>
+						</ul>
+					</div>
+					<div style="float: left; width: 40%">
+						<img alt="Les-Tilleuls.coop" src="http://les-tilleuls.coop/wp-content/uploads/2014/06/les-tilleuls.png">
+					</div>
 				</section>
 
 				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
+					# Data-centric
 
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+					Ils exposeront et consommeront vos données :
 
-						```
-						<section data-markdown>
-						  ## Markdown support
+					* sites internets internes
+					* applis mobiles internes
+					* applications "lourdes" internes
+					* **clients, fournisseurs, partenaires**
+					* moteurs de recherche, aggrégateurs, annuaires, comparateurs de prix, places de marché...
+				</section>
 
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
+				<section data-markdown>
+					# Linked-Data
+
+					* Données structurées sur le web (compréhensibles par les machines)
+					* Données liées les unes aux autres à travers le réseau
+					* Initiative du W3C
+					* Interopérabilité
+					* Fondements techniques : URI, HTTP et RDF
 				</section>
 
 				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
+					<section data-markdown>
+						# API-first
 
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
+						*Application Programming Interface*
+
+						Construire l'API d'abord, bâtir les applications par dessus.
 					</section>
+
 					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
+						<h1>SPA... ou pas ?</h1>
+
+						<i>Single Page Application</i>
+
+						<ul>
+							<li><i class="fa fa-arrow-up"></i> Fluidité, performances, UX</li>
+							<li><i class="fa fa-arrow-up"></i> Moins de données transférées (mobile)</li>
+							<li><i class="fa fa-arrow-up"></i> Séparation de la logique métier et de l'affichage</li>
+							<li><i class="fa fa-arrow-down"></i> SEO</li>
+						</ul>
 					</section>
 				</section>
 
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
-				</section>
-
 				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
+					<section data-markdown>
+						# API REST
+
+						*REpresentational State Transfer*
+
+						* Style d'architecture orienté ressources
+						* URI comme identifiants
+						* Utilisation du protocole et des verbes HTTP
+						* Contrairement à RPC ou à SOAP, n'est ni un format, ni un protocole
 					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
+					<section data-markdown>
+						| Resource                                             |GET                      |PUT                             | POST                   | DELETE                 |
+						-----------------|-------------------------|--------------------------------|------------------------|------------------------|
+						| Collection [1] | Liste tous les éléments | Remplace la collection entière | Crée un nouvel élément | Supprime la collection |
+						| Elément [2]    | Recupère l'élément      | Remplace l'élèment             | n/a                    | Supprime l'élément     |
+
+						1. http://les-tilleuls.coop/api/coworkers
+						2. http://les-tilleuls.coop/api/coworkers/9
 					</section>
 				</section>
 
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code>Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
+				<section>
+					<section data-markdown>
+						# HATEOAS
 
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
+						*Hypermedia as the Engine of Application State*
+
+						* Utilisation des URI pour identifier les ressources
+						* Utilisation des types MIME
+						* Permet la découverte automatique de ressources
+					</section>
+
+					<section data-markdown>
+						# Quelques formats hypermedia
+
+						* HTML
+						* HAL
+						* Siren
+						* Collection+JSON
+						* **JSON-LD**
+					</section>
+
+					<section data-markdown>
+						```json
+						{
+							"_links": {
+								"self": { "href": "/product/987" },
+								"upsell": [
+									{ "href": "/product/452", "title": "Flower pot" },
+									{ "href": "/product/832", "title": "Hover donkey" }
+								]
+							},
+							"name": "A product",
+							"weight": 400,
+						}
+						```
+
+						Source : [stateless.co](http://blog.stateless.co/post/13296666138/json-linking-with-hal)
+					</section>
 				</section>
 
 				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
+					<section data-markdown>
+						# JSON-LD
 
-    var nodes = document.querySelectorAll( selector );
+						*JSON for Linked Data*
 
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
+						* 100% compatible avec JSON
+						* Possibilité "d'upgrader" une API REST / JSON existante
+						* Recommandation du W3C (depuis 2014)
+						* Adopté par Google, la BBC, Microsoft, le gouvernement US...
+						* Outillage en partie disponible
+						* Lecture seulement
+						* **Implémentation de référence en PHP**
+					</section>
 
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
+					<section data-markdown>
+						```json
+						{
+						"@context": "http://schema.org/",
+						"@type": "Person",
+						"name": "Jane Doe",
+						"jobTitle": "Professor",
+						"telephone": "(425) 123-4567",
+						"url": "http://www.janedoe.com"
+						}
+						```
+
+						Source: [json-ld.org](http://json-ld.org/playground/index.html)
+					</section>
+
+					<section data-markdown>
+						```json
+						{
+						"@context": "http://schema.org",
+						"@type": "Product",
+						"aggregateRating": {
+							"@type": "AggregateRating",
+							"bestRating": "100",
+							"ratingCount": "24",
+							"ratingValue": "87"
+						},
+						"image": "dell-30in-lcd.jpg",
+						"name": "Dell UltraSharp 30\" LCD Monitor",
+						"offers": {
+							"@type": "AggregateOffer",
+							"highPrice": "$1495",
+							"lowPrice": "$1250",
+							"offerCount": "8",
+							"offers": [
+								{
+									"@type": "Offer",
+									"url": "save-a-lot-monitors.com/dell-30.html"
+								},
+								{
+									"@type": "Offer",
+									"url": "jondoe-gadgets.com/dell-30.html"
+								}
+							]
+						}
+						}
+						```
+
+						Source : [schema.org](https://schema.org/Product)
+					</section>
 				</section>
 
 				<section>
-					<h2>Marvelous List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
+					<section data-markdown>
+						# Hydra
+
+						* Permet de décrire des API REST en JSON-LD
+						* = ajoute le support de l'écriture
+						* = API auto-découvrable
+						* Léger et simple à implémenter
+						* Brouillon du W3C
+						* *Work In Progress*
+						* **Implémentation de référence en Symfony**
+					</section>
+
+					<section data-markdown>
+						```json
+						{
+						"@context": "http://www.w3.org/ns/hydra/context.jsonld",
+						"@id": "/an-issue",
+						"title": "An exemplary issue representation",
+						"description": "This issue can be deleted with an HTTP DELETE request",
+						"operation": [
+							{
+							"@type": "DeleteResourceOperation",
+							"method": "DELETE"
+							}
+						]
+						}
+						```
+					</section>
+
+					<section data-markdown>
+						```json
+						{
+						"@context": "http://www.w3.org/ns/hydra/context.jsonld",
+						"@id": "http://api.example.com/doc/#Comment",
+						"@type": "Class",
+						"title": "The name of the class",
+						"description": "A short description of the class.",
+						"supportedProperty": [
+							{
+							"@type": "SupportedProperty",
+							"property": "#property", // The property
+							"required": true, // Is the property required in a request to be valid?
+							"readable": false, // Can the client retrieve the property's value?
+							"writeable": true // Can the client change the property's value?
+							}
+						]
+						}
+						```
+					</section>
+
+					<section data-markdown>
+						**http://www.markus-lanthaler.com/hydra/api-demo/issues/**
+
+						```json
+						{
+							"@context": "/hydra/api-demo/contexts/Collection.jsonld",
+							"@type": "Collection",
+							"@id": "http://www.markus-lanthaler.com/hydra/api-demo/issues/",
+							"members": [
+							{
+								"@id": "/hydra/api-demo/issues/2",
+								"@type": "vocab:Issue"
+							},
+							{
+								"@id": "/hydra/api-demo/issues/3",
+								"@type": "vocab:Issue"
+							}
+						}
+						```
+					</section>
+
+					<section>
+						<img src="img/hydra-console.png">
+					</section>
 				</section>
 
 				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
+					<section data-markdown>
+						# Vocabulaires et ontologies
+
+						* Définitions de termes d'un domaine spécifique
+						* Donnent un sens commun à des données de difféntes sources
+						* Indispensables à la contextualisation des données par les machines
+						* Composés de classes, propriétés et relations
+					</section>
+
+					<section data-markdown>
+						# Quelques vocabulaires
+
+						* Dublin Core (publications)
+						* FOAF (Friend of a friend - personnes)
+						* GoodRelations (e-commerce)
+						* Music Ontology (musique)
+						* **Schema.org**
+					</section>
+
+					<section data-markdown>
+						# Schema.org
+
+						* A l'origine : pour les moteurs de recherche
+						* Défini un grand nombre d'éléments courants : personnes, publications, évènement, produits, avis, élèments chimiques et médicaux...
+						* Créé et pris en charge par par Google, Bing, Yahoo! et Yandex
+						* Représentable sous forme de HTML (microdata), RDF (RDFa) et *JSON-LD*
+						* Evolutions sous l'égide du W3C (Web schemas group)
+					</section>
+
+					<section data-markdown>
+						```json
+						{
+						"@context": "http://schema.org",
+						"@type": "Event",
+						"name": "Miami Heat at Philadelphia 76ers - Game 3 (Home Game 1)",
+						"location": {
+							"@type": "Place",
+							"address": {
+								"@type": "PostalAddress",
+								"addressLocality": "Philadelphia",
+								"addressRegion": "PA"
+							},
+							"url": "wells-fargo-center.html"
+						},
+						"offers": {
+							"@type": "AggregateOffer",
+							"lowPrice": "$35",
+							"offerCount": "1938"
+						},
+						"startDate": "2016-04-21T20:00",
+						"url": "nba-miami-philidelphia-game3.html"
+						}
+						```
+					</section>
+				</section>
+
+				<section data-markdown>
+					# Et Symfony dans tout ça ?
 				</section>
 
 				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							<tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							<tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							<tr>
-						</tbody>
-					</table>
+					<section data-markdown>
+						# PHP Schema
+
+						* Générer un modèle de données à partir de Schema.org
+						* Mapping Doctrine ORM
+						* Annotations de validation
+						* PHPDoc
+						* Enums (via PHP Enum)
+						* ResolveTargetEntityListener
+					</section>
+
+					<section data-markdown>
+						```yaml
+						types:
+							Person:
+								parent: false
+								properties:
+									familyName: ~
+									givenName: ~
+									additionalName: ~
+									gender: ~
+									address: ~
+									birthDate: ~
+									telephone: ~
+									email: ~
+									url: ~
+									jobTitle: ~
+						```
+					</section>
+
+					<section data-markdown>
+						```php
+						namespace SchemaOrg\Entity;
+
+						use Doctrine\Common\Collections\ArrayCollection;
+						use Doctrine\ORM\Mapping as ORM;
+						use Symfony\Component\Validator\Constraints as Assert;
+
+						/**
+						 * A person (alive, dead, undead, or fictional).
+						 *
+						 * @see http://schema.org/Person Documentation on Schema.org
+						 *
+						 * @ORM\Entity
+						 */
+						class Person extends Thing
+						{
+							/**
+							 * @var integer
+							 * @ORM\Column(type="integer")
+							 * @ORM\Id
+							 * @ORM\GeneratedValue(strategy="AUTO")
+							 */
+							private $id;
+							/**
+							 * @var string An additional name for a Person, can be used for a middle name.
+							 * @Assert\Type(type="string")
+							 * @ORM\Column(nullable=true)
+							 */
+							private $additionalName;
+
+						// ...
+						```
+					</section>
+				</section>
+
+				<section data-markdown>
+					# API : les classiques
+
+					* FOSRest
+					* JMSSerializer
+					* NelmioAPIDoc
 				</section>
 
 				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
+					<section data-markdown>
+						# API : les expérimentaux
+
+						* MLHydraBundle
+						* Symfony Serializer Component 2.7
+					</section>
+
+					<section data-markdown>
+						```php
+						/**
+						* An Issue tracked by the system.
+						*
+						* @ORM\Table()
+						* @ORM\Entity
+						*
+						* @Hydra\Expose()
+						* @Hydra\Id("issue_retrieve")
+						* @Hydra\Operations( {
+						*     "issue_replace",
+						*     "issue_delete"
+						* } )
+						*
+						* @author Markus Lanthaler <mail@markus-lanthaler.com>
+						*/
+						class Issue
+						{
+
+						// ...
+						```
+					</section>
+
+					<section data-markdown>
+						# A propos du Serializer 2.7
+
+						* Groupes de serialisation (annotations, XML, YAML)
+						* Gestion des références circulaires
+						* Nouveau normaliseur basé sur le composant PropertyAccess
+						* Désérialisation possible dans un objet déjà existant
+						* Convertisseurs de noms de propriété
+						* Important refactoring
+					</section>
 				</section>
 
 				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
+					<section data-markdown>
+						# API : en cours de développement
+
+						**JsonLdApiBundle**
+
+						* Exposition des entités
+						* Génération automatique JSON-LD
+						* Génération automatique Hydra grâce aux groupes Validation et Serializer
+						* Enregistrement automatique des rotues
+					</section>
+
+					<section data-markdown>
+						```xml
+						&lt;service id="echoppe.resources.brand" class="Dunglas\JsonLdApiBundle\Resource"&gt;
+							&lt;argument>AppBundle\Entity\ProductModel&lt;/argument&gt;
+							&lt;tag name="hydra.resource" /&gt;
+						&lt;/service&gt;
+						```
+					</section>
+
+					<section data-markdown>
+						```
+						json_ld_api_product_models_doc    GET|HEAD ANY    ANY  /doc/product_models
+						json_ld_api_product_models_cget   GET|HEAD ANY    ANY  /product_models
+						json_ld_api_product_models_post   POST     ANY    ANY  /product_models
+						json_ld_api_product_models_get    GET|HEAD ANY    ANY  /product_models/{id}
+						json_ld_api_product_models_put    PUT      ANY    ANY  /product_models/{id}
+						json_ld_api_product_models_delete DELETE   ANY    ANY  /product_models/{id}
+						```
+					</section>
 				</section>
 
 				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
+					<h1>Des questions ?</h1>
 
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
+					<i class="fa fa-beer fa-5x"></i>
 				</section>
-
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="//www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
-				</section>
-
-				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-					</ul>
-				</section>
-
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
-				</section>
-
 			</div>
 
 		</div>
